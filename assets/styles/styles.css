@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.example-image {
+  --border: 0px
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: var(--border);
+}
+.border-red {
+  --border: 2px solid red;
+}
+
+.stickers {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sticker__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sticker__image{
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+}
+
+.message__stickers {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.verifiedStickers{
+  display: flex;
+  margin: 0 auto;
+}
